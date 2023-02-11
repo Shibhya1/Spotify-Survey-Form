@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Spotify Survey Form</h1>
+    <p id="description">A feedback from your side will help us make the platform better.</p>
+    <form id="survey-form">
+        <label id="name-label" for="name">Name:<input type="text" id="name" placeholder="Enter your name.." required></label>
+        <label id="email-label" for="email">Email:<input type="email" id="email" placeholder="abc@xyz.com." required></label>
+        <label id="number-label" for="age">Age:<input type="number" id="number"  placeholder="Enter your age.." min="13" max="121" required></label>
+        <label for="time">You listen to music for: <select id="dropdown">
+            <option value="">
+                (select one)
+            </option>
+            <option value="15-30 min">
+                15-30 min a day
+            </option>
+            <option value="1-2 hr">
+                1-2 hrs a day
+            </option>
+            <option value="3-6 hr">
+                3-6 hrs a day
+            </option>
+        </label>
+    </select>
+        <div class="radio-container">
+        <p>Which device do you mostly use:</p>
+       <label><input type="radio" name="Device" id="Device" checked value="Mobile" >Mobile</label>
+        <label><input type="radio" name="Device" id="Device" value="PC">PC</label>
+    </div> 
+        <div class="genre-container">
+            <p>Which genres do you like:</p>
+            <label for="POP-genre"><input type="checkbox" class="genre" value="Pop">Pop</label>
+            <label for="genre"><input type="checkbox" class="genre" value="Rock">Rock</label>
+            <label for="genre"><input type="checkbox" class="genre" value="Soundtrack">Soundtrack</label>
+            <label for="genre"><input type="checkbox" class="genre" value="Rap and Hip-Hop">Rap and Hip-Hop</label>
+            <label for="genre"><input type="checkbox" class="genre" value="Electronic Dance Music">Electronic Dance Music</label>
+            <label for="genre"><input type="checkbox" class="genre" value="K-Pop">K-Pop</label>
+            <label for="genre"><input type="checkbox" class="genre" value="Indie Music">Indie Music</label>
+            <label for="genre"><input type="checkbox" class="genre" value="R&B">R&B</label>
+            <label for="genre"><input type="checkbox" class="genre" value="Country">Country</label>
+            <label for="genre"><input type="checkbox" class="genre" value="Jazz">Jazz</label>
+            
+        </div>
+            
+        <label for="feedback">We would love to hear from you:<textarea placeholder="Enter your Comments..." class="feedback"></textarea></label>
+        <br>
+            <label for="submit"><input type="submit" id="submit"></label>
+    </form>
+    
+</body>
+</html>
